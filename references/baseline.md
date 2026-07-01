@@ -22,11 +22,15 @@ gem "image_processing", "~> 1.2"
 gem "bootsnap", require: false
 
 group :development, :test do
+  gem "amazing_print"
   gem "brakeman", require: false
   gem "bundler-audit", require: false
   gem "dotenv", ">= 3.0"
   gem "factory_bot_rails"
+  gem "pry-byebug"
+  gem "pry-rails"
   gem "rspec-rails"
+  gem "simplecov", require: false
   gem "debug", platforms: %i[mri windows], require: "debug/prelude"
 end
 
@@ -46,6 +50,27 @@ group :test do
   gem "shoulda-matchers"
 end
 ```
+
+## Pry And Amazing Print
+
+Add to `Gemfile` (`:development, :test`):
+
+```ruby
+gem "amazing_print"
+gem "pry-byebug"
+gem "pry-rails"
+```
+
+`pry-rails` replaces `rails console` with Pry. `pry-byebug` adds `break`/`next`/`step` debugging.
+
+Configure **per developer machine** in `~/.pryrc` (create the file if it does not exist). Append at the end:
+
+```ruby
+require "amazing_print"
+AmazingPrint.pry!
+```
+
+Do not commit `~/.pryrc` to the app repo — it is a personal shell config.
 
 ## JavaScript And Vite
 
