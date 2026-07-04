@@ -1,4 +1,4 @@
-# nextgen-rails-starter
+# nextgen-rails-starter-skill
 
 Cursor/Codex agent skill for scaffolding production-minded Rails 8 starters.
 
