@@ -17,7 +17,7 @@ Cursor/Codex agent skill for scaffolding production-minded Rails 8 starters.
 **Codex** — already at `~/.codex/skills/nextgen-rails-starter/`, or clone there:
 
 ```bash
-git clone https://github.com/wayjourney/nextgen-rails-starter.git ~/.codex/skills/nextgen-rails-starter
+git clone https://github.com/wayjourney/nextgen-rails-starter-skill.git ~/.codex/skills/nextgen-rails-starter
 ```
 
 ## Usage
